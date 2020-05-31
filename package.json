@@ -1,0 +1,23 @@
+{
+  "name": "create-template",
+  "version": "1.0.0",
+  "description": "create template for project",
+  "main": "index.js",
+  "scripts": {
+    "test": "./create-project-npm.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanama/scripts.git"
+  },
+  "keywords": [
+    "start_project",
+    "node"
+  ],
+  "author": "fanama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanama/scripts/issues"
+  },
+  "homepage": "https://github.com/fanama/scripts#readme"
+}
