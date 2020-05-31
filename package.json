@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "create template for project",
   "main": "index.js",
+  "bin": {
+    "create-template": "./index.js"
+  },
   "scripts": {
-    "test": "./create-project-npm.sh"
+    "create": "./create-project-npm.sh"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/fanama/scripts/issues"
   },
-  "homepage": "https://github.com/fanama/scripts#readme"
+  "homepage": "https://github.com/fanama/scripts#readme",
+  "dependencies": {
+    "node-cmd": "^3.0.0"
+  }
 }
