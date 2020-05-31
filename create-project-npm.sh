@@ -1,14 +1,21 @@
 #!/bin/bash
 echo create-project
-read -p 'name: ' name
-mkdir $name
-cd $name
+read -p 'name: ' NAME
+mkdir $NAME
+cd $NAME
 npm init -y 
-read -p 'dev' DEV
-read -p 'dep' DEP
+read -p 'dev: ' DEV
+read -p 'dep: ' DEP
 npm install -D $DEV
 npm install $DEP
-touch "$name.js"
+touch "$NAME.js"
+
+for MODULE in $DEP
+do
+    echo "const $MODULE = require('$MODULE') \n ">>$NAME.js
+done
+
+
 mkdir public
 mkdir src
-touch src/index.html
+touch src/app.js
