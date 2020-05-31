@@ -12,7 +12,7 @@ touch "$NAME.js"
 
 for MODULE in $DEP
 do
-    echo "const $MODULE = require('$MODULE') \n ">>$NAME.js
+    echo "const $MODULE = require('$MODULE')">>$NAME.js
 done
 
 
