@@ -1,5 +1,5 @@
 {
-  "name": "create-template",
+  "name": "create-template-module",
   "version": "1.0.0",
   "description": "create template for project",
   "main": "index.js",

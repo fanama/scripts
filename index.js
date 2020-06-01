@@ -1,6 +1,15 @@
 #!/usr/bin/env node
-const cmd = require('node-cmd')
 
-cmd.run('./create-project-npm.sh')
+const { exec } = require("child_process");
 
-console.log("working")
+exec("create-project-npm.sh", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
