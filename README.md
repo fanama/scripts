@@ -1,18 +1,18 @@
-# Don't work yet
+# create-template
 
-install globaly run 
+## Prerequise
+
+- node
+- npm
+- works only on a linux/unix base system (or gitbash/wsl on windows)
+
+you can create a template for any node project
+
+## installation 
 
 >npm install -g create-template-module
 
-then
+## how to use
 
 >create-template
-
-## issue
-
-```
-root@2225826d159b:/# create-template
-sh: 0: Can't open ./create-project-npm.sh
-root@2225826d159b:/# 
-```
 
