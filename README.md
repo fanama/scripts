@@ -1,15 +1,10 @@
-# BUG TO FIX
+# Don't work yet
 
-## install-docker.sh
+install globaly run 
 
-installe docker & docker-compose
-(ne fonctionne pas sur Ubuntu 20.04)
+>npm install -g create-template-module
 
-## install-node.sh
+then
 
-installe node
-
-## create-project-npm.sh
-
-crée un template de projet npm
+>create-template
 

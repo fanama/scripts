@@ -21,4 +21,3 @@ mkdir src
 touch src/app.js
 
 echo "done"
-pause
