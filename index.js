@@ -2,4 +2,4 @@
 
 const {spawn} = require('child_process');
 
-spawn('sh',['./create-project-npm.sh'], { stdio: 'inherit' });
+spawn('sh',[__dirname+'/create-project-npm.sh'], { stdio: 'inherit' });
