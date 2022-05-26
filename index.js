@@ -1,5 +1,15 @@
 #!/usr/bin/env node
 
-const {spawn} = require('child_process');
+const { gitClone, gitRemoveOrigin } = require("./infra/git");
 
-spawn('sh',[__dirname+'/create-project-npm.sh'], { stdio: 'inherit' });
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question(`Name of Project : `, async (name) => {
+  await gitClone(name);
+  await gitRemoveOrigin(name);
+  readline.close();
+});
+
