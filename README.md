@@ -15,4 +15,5 @@ you can create a template for any node project
 ## how to use
 
 >create-template
+>npx github:fanama/scripts
 
