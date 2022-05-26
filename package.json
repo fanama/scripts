@@ -7,7 +7,7 @@
     "create-template": "./index.js"
   },
   "scripts": {
-    "create": "./create-project-npm.sh"
+    "create-template-module": "create-template"
   },
   "repository": {
     "type": "git",
