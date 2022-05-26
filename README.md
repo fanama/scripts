@@ -12,5 +12,8 @@
 ## how to use
 
 >create-template
+
+or
+
 >npx github:fanama/scripts
 
